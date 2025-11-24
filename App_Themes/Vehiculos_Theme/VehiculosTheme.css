@@ -1,0 +1,44 @@
+﻿body {
+    background: #eef2f5;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container.body-content {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+.navbar {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+
+.btn-hover-move {
+    transition: transform 0.3s ease, box-shadow 0.2s;
+}
+
+    .btn-hover-move:hover {
+        transform: translateY(-2px) scale(1.02);
+        box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+
+
+.table-success {
+    background-color: #f3fbf4;
+}
+
+
+.form-label {
+    font-weight: 600;
+}
+
+
+.alert {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #2c3e50 !important;
+}

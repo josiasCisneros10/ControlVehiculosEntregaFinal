@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="FormPropietario.aspx.vb" Inherits="ControlVehiculos.FormPropietario" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <style>
@@ -17,7 +18,7 @@
     <div class="container d-flex flex-column mb-3 gap-2">
 
         <%-- Persona (ddl) --%>
-        <asp:Label ID="lblPersona" runat="server" Text="Persona:" CssClass="form-label"></asp:Label>
+        <asp:Label ID="lblPersona" runat="server" Text="" CssClass="form-label"></asp:Label>
         <asp:DropDownList ID="ddlPersona" runat="server" CssClass="form-select">
         </asp:DropDownList>
 
@@ -68,8 +69,7 @@
                 p.IdPersona,
                 (per.Nombre + ' ' + per.Apellido1 + ' ' + ISNULL(per.Apellido2, '')) AS NombreCompleto
             FROM Propietarios p
-            INNER JOIN Personas per ON p.IdPersona = per.idPersona">
-    </asp:SqlDataSource>
+            INNER JOIN Personas per ON p.IdPersona = per.idPersona"></asp:SqlDataSource>
 
     <asp:GridView ID="gvPropietarios" runat="server"
         CssClass="table table-striped table-hover table-success"

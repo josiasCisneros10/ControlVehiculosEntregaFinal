@@ -1,0 +1,17 @@
+﻿
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+
+<asp:Button runat="server" 
+            CssClass="btn btn-primary btn-hover-move" />
+
+<asp:TextBox runat="server" 
+             CssClass="form-control form-control-sm" />
+
+<asp:Label runat="server" 
+           CssClass="form-label" />
+
+<asp:GridView runat="server"
+              CssClass="table table-striped table-hover table-success shadow-sm"
+              BorderStyle="None"
+              CellPadding="6"
+              GridLines="None" />
